@@ -5,7 +5,9 @@ from flask import request
 
 app = flask.Flask(__name__)
 app.config["DEBUG"] = True
-
+@app.route('/', methods=['GET'])
+def home():
+    return "Hello"
 @app.route('/test_flask', methods=['POST'])
 def test_flask():
     req_data = request.get_json()
