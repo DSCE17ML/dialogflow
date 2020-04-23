@@ -7,7 +7,7 @@ client = Client(account_sid, auth_token)
 
 message = client.messages \
     .create(
-         body='Hi Test for Twilio.',
+         body='Hi, call to check a postman.',
          from_='+19798032727',
          to='+919818225401'
      )
