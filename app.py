@@ -1,3 +1,4 @@
+import twilio.rest
 from twilio.rest import Client
 account_sid = 'ACd6aad6cb6e31bb8fc324d95e7142c763'
 auth_token = 'a1221b507dea4800bd00c7a3d221c4e8'
