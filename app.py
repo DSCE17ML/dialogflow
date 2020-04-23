@@ -1,17 +1,16 @@
-import flask
-import json
-from flask import render_template
-from flask import request
+account_sid = 'ACd6aad6cb6e31bb8fc324d95e7142c763'
+auth_token = 'a1221b507dea4800bd00c7a3d221c4e8'
+client = Client(account_sid, auth_token)
 
-app = flask.Flask(__name__)
-app.config["DEBUG"] = True
-@app.route('/', methods=['GET'])
-def home():
-    return "Hello"
-@app.route('/test_flask', methods=['POST'])
-def test_flask():
-    req_data = request.get_json()
-    return req_data
-    
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+ 
+
+message = client.messages \
+    .create(
+         body='',
+         from_='+19798032727',
+         to='+919818225401'
+     )
+
+ 
+
+print(message.sid)
