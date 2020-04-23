@@ -13,5 +13,5 @@ message = client.messages \
      )
 
  
-
+print("Sent")
 print(message.sid)
