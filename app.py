@@ -9,7 +9,7 @@ message = client.messages \
     .create(
          body='Hi, call to check a postman.',
          from_='+19798032727',
-         to='+919818225401'
+         to=''
      )
 
  
